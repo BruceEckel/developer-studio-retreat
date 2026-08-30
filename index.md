@@ -31,7 +31,7 @@ rhythm:
   number: 02 · The rhythm
   heading: Anchor &amp;
   heading_em: flow.
-  intro: Lightweight social anchors bookend long stretches of uninterrupted focus. Here is what a day might look like.
+  intro: Lightweight social anchors bookend long stretches of uninterrupted focus. What a day might look like.
   photos:
     - image: assets/img/walk.jpg
       alt: A trail through autumn larches
