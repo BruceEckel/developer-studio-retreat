@@ -47,7 +47,7 @@ principles:
 
 feedback:
   number: 04 · Your turn
-  heading: We'd love your
+  heading: I'd love your
   heading_em: thoughts.
   intro: Drop feedback, critiques, or ideas in the discussion. A GitHub account is all you need.
 
