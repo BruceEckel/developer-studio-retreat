@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:image" content="{{ page.hero.image | absolute_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="{{ '/assets/css/retreat.css' | relative_url }}">
+</head>
+<body>
+
+  <header class="hero">
+    <img class="hero-photo" src="{{ page.hero.image | relative_url }}" alt="{{ page.hero.alt }}">
+    <div class="hero-shade"></div>
+    <nav class="topbar">
+      <span class="wordmark">{{ page.title }}</span>
+      <div class="topbar-links">
+        <a href="#thesis">Thesis</a>
+        <a href="#rhythm">Rhythm</a>
+        <a href="#feedback">Feedback</a>
+      </div>
+    </nav>
+    <div class="hero-copy">
+      <p class="eyebrow">{{ page.hero.eyebrow }}</p>
+      <h1>{{ page.hero.headline }}<br><em>{{ page.hero.headline_em }}</em></h1>
+      <p class="tagline">{{ page.hero.tagline }}</p>
+      <a class="button" href="#feedback">{{ page.hero.cta }}
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M6 13l6 6 6-6"></path></svg>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="thesis" class="thesis">
+      <div class="thesis-text">
+        <p class="eyebrow">{{ page.thesis.number }}</p>
+        <h2>{{ page.thesis.heading }} <em>{{ page.thesis.heading_em }}</em></h2>
+        <div class="prose">
+          {{ content }}
+        </div>
+        <div class="contrast">
+          {% for item in page.thesis.contrast %}
+          <div>
+            <p class="contrast-name">{{ item.name }}</p>
+            <p class="contrast-note">{{ item.note }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <figure class="thesis-figure">
+        <img src="{{ page.thesis.image | relative_url }}" alt="{{ page.thesis.alt }}" loading="lazy">
+        <figcaption>{{ page.thesis.caption }}</figcaption>
+      </figure>
+    </section>
+
+    <section id="rhythm" class="rhythm">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">{{ page.rhythm.number }}</p>
+          <h2>{{ page.rhythm.heading }} <em>{{ page.rhythm.heading_em }}</em></h2>
+        </div>
+        <p class="section-intro">{{ page.rhythm.intro }}</p>
+      </div>
+
+      <div class="daystrip" aria-hidden="true">
+        <div class="daystrip-bar"></div>
+        <div class="daystrip-ticks"><span>8 AM</span><span>NOON</span><span>6 PM</span><span>LATE</span></div>
+      </div>
+
+      <div class="rhythm-grid">
+        <div class="schedule">
+          {% for row in site.data.retreat.schedule %}
+          <div class="row">
+            <p class="time">{{ row.time }}</p>
+            <div>
+              <p class="row-title">{{ row.title }}</p>
+              <p class="row-detail">{{ row.detail }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="rhythm-photos">
+          {% for photo in page.rhythm.photos %}
+          <figure>
+            <img src="{{ photo.image | relative_url }}" alt="{{ photo.alt }}" loading="lazy">
+            <figcaption>{{ photo.caption }}</figcaption>
+          </figure>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section id="principles" class="principles">
+      <div>
+        <p class="eyebrow">{{ page.principles.number }}</p>
+        <h2>{{ page.principles.heading }} <em>{{ page.principles.heading_em }}</em></h2>
+      </div>
+      <div class="cards">
+        {% for card in site.data.retreat.principles %}
+        <div class="card">
+          {% include icon.html name=card.icon %}
+          <p class="card-title">{{ card.title }}</p>
+          <p class="card-detail">{{ card.detail }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section id="feedback" class="feedback">
+      <div class="feedback-lead">
+        <p class="eyebrow">{{ page.feedback.number }}</p>
+        <h2>{{ page.feedback.heading }} <em>{{ page.feedback.heading_em }}</em></h2>
+        <p class="feedback-intro">{{ page.feedback.intro }}</p>
+      </div>
+      <div class="feedback-body">
+        <ol class="questions">
+          {% for q in site.data.retreat.questions %}
+          <li>{{ q }}</li>
+          {% endfor %}
+        </ol>
+        <div id="comments">
+          <script src="https://giscus.app/client.js"
+                  data-repo="BruceEckel/developer-studio-retreat"
+                  data-repo-id="R_kgDOUIaApA"
+                  data-category="General"
+                  data-category-id="DIC_kwDOUIaApM4DEepb"
+                  data-mapping="pathname"
+                  data-strict="0"
+                  data-reactions-enabled="1"
+                  data-emit-metadata="0"
+                  data-input-position="bottom"
+                  data-theme="light"
+                  data-lang="en"
+                  crossorigin="anonymous"
+                  async>
+          </script>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-mark">{{ page.title }}</p>
+    <p class="credits">{{ page.credits }}</p>
+  </footer>
+
+</body>
+</html>
