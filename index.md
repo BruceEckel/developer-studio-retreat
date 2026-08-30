@@ -7,7 +7,7 @@ hero:
   eyebrow: A concept · A few days · Six to ten people
   headline: Work alone,
   headline_em: together.
-  tagline: A retreat for focused parallel craft, shared momentum, and zero-friction camaraderie.
+  tagline: Simplify your life for a few days. A retreat for focused parallel craft, shared momentum, and zero-friction camaraderie.
   cta: Tell us what you think
   image: assets/img/hero.jpg
   alt: Morning light over a mountain valley
