@@ -13,13 +13,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/retreat.css' | relative_url }}">
 </head>
-<body>
+<body id="top">
 
   <header class="hero">
     <img class="hero-photo" src="{{ page.hero.image | relative_url }}" alt="{{ page.hero.alt }}">
     <div class="hero-shade"></div>
-    <nav class="topbar">
-      <span class="wordmark">{{ page.title }}</span>
+    <nav class="topbar" id="topbar">
+      <a class="wordmark" href="#top">{{ page.title }}</a>
       <div class="topbar-links">
         <a href="#thesis">Thesis</a>
         <a href="#rhythm">Rhythm</a>
@@ -152,6 +152,15 @@
     <p class="footer-mark">{{ page.title }}</p>
     <p class="credits">{{ page.credits }}</p>
   </footer>
+
+  <script>
+    (function () {
+      var bar = document.getElementById('topbar');
+      function update() { bar.classList.toggle('scrolled', window.scrollY > 40); }
+      window.addEventListener('scroll', update, { passive: true });
+      update();
+    })();
+  </script>
 
 </body>
 </html>
