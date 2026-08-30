@@ -32,15 +32,17 @@ The retreat uses lightweight social anchors to bookend uninterrupted deep focus.
 
 - **Private Basecamps:** Individual extended suites (desk, mini-kitchen, separate sleeping space).
 - **No Roommate Overhead:** You book your own room directly with points or cards; zero host liability.
-- **The Headphone Norm:** Over-ear headphones signal an invisible wall. Zero obligation to socialize during focus blocks.
+- **The Headphone Norm:** In common spaces, over-ear headphones signal an invisible wall. Zero obligation to socialize during focus blocks.
+- **Opt-in Communication via Slack:** No direct interruptions, but you can communicate if you choose.
 - **High Task-Clarity:** Geared for self-directed heavy lifts (authoring a book, major architecture shifts, deep compiler work, shipping standalone tools).
 
 ---
 
 ## We'd Love Your Thoughts
 
-Drop your feedback, critiques, or ideas below:
+Drop your feedback, critiques, or ideas below. For example:
 
-- What project would you bring that benefits from 4 days of isolated momentum?
+- What project would you bring that benefits from `n` days of isolated momentum?
+- What `n` days would be optimal (e.g. 4)?
 - What daily cadence or structure keeps you in flow?
 - What locations, amenities, or norms would make this an instant "yes" for you?
