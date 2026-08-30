@@ -24,16 +24,13 @@ schedule:
 principles:
   - icon: door
     title: Private studios
-    detail: "Individual extended-stay suites: a desk, a mini-kitchen, and a separate sleeping space."
-  - icon: card
-    title: No roommate overhead
-    detail: You book your own room directly, with points or a card. Zero host liability.
+    detail: "Your own extended-stay suite: a desk, a mini-kitchen, a separate sleeping space. You book it directly, with points or a card. No roommates, no host liability."
   - icon: headphones
     title: The headphone norm
     detail: Over-ear headphones are an invisible wall. No obligation to socialize during focus blocks.
   - icon: target
-    title: High task-clarity
-    detail: "Built for self-directed heavy lifts: a book, a major architecture shift, deep compiler work, a standalone tool."
+    title: You make your own choices
+    detail: Every activity is opt-in. Skip a checkin, eat in your room, sit out a salon, or join everything. Nobody keeps score.
   - icon: chat
     title: Opt-in communication via Slack
     detail: No direct interruptions, but you can communicate if you choose.

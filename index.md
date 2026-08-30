@@ -42,7 +42,7 @@ rhythm:
 
 principles:
   number: 03 · Logistics &amp; principles
-  heading: Five rules,
+  heading: Four rules,
   heading_em: no fine print.
 
 feedback:
