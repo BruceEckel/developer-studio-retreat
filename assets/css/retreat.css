@@ -331,14 +331,7 @@ figcaption {
   color: var(--ink);
 }
 .questions li:last-child { border-bottom: 1px solid #cfc2ad; }
-.questions code {
-  font-family: var(--mono);
-  font-size: 0.72em;
-  padding: 0.1em 0.4em;
-  border-radius: 3px;
-  background: #e4dac7;
-  color: var(--accent-deep);
-}
+.questions strong { font-weight: 500; font-style: italic; }
 .questions li::before {
   content: "0" counter(q);
   font-family: var(--mono);
