@@ -34,8 +34,12 @@ principles:
   - icon: target
     title: High task-clarity
     detail: "Built for self-directed heavy lifts: a book, a major architecture shift, deep compiler work, a standalone tool."
+  - icon: chat
+    title: Opt-in communication via Slack
+    detail: No direct interruptions, but you can communicate if you choose.
 
 questions:
-  - What project would you bring that benefits from four days of isolated momentum?
+  - What project would you bring that benefits from <code>n</code> days of isolated momentum?
+  - What <code>n</code> days would be optimal (e.g. 4)?
   - What daily cadence or structure keeps you in flow?
   - What locations, amenities, or norms would make this an instant "yes" for you?

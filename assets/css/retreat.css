@@ -278,8 +278,8 @@ figcaption {
 }
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
 }
 .card {
   display: flex;
@@ -291,7 +291,7 @@ figcaption {
   border-radius: 4px;
 }
 .card .icon { color: var(--accent); }
-.card-title { font-family: var(--serif); font-size: 28px; line-height: 1.1; color: var(--paper); }
+.card-title { font-family: var(--serif); font-size: 26px; line-height: 1.1; color: var(--paper); }
 .card-detail { font-size: 15px; line-height: 1.6; color: var(--text-2); }
 
 /* Feedback */
@@ -331,6 +331,14 @@ figcaption {
   color: var(--ink);
 }
 .questions li:last-child { border-bottom: 1px solid #cfc2ad; }
+.questions code {
+  font-family: var(--mono);
+  font-size: 0.72em;
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  background: #e4dac7;
+  color: var(--accent-deep);
+}
 .questions li::before {
   content: "0" counter(q);
   font-family: var(--mono);
@@ -364,10 +372,6 @@ figcaption {
 }
 
 /* Responsive */
-
-@media (max-width: 1100px) {
-  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
 
 @media (max-width: 860px) {
   .thesis, .rhythm-grid, .feedback { grid-template-columns: 1fr; }

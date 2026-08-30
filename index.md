@@ -4,7 +4,7 @@ title: Developer Studio Retreat
 description: A concept for focused parallel craft, shared momentum, and zero-friction camaraderie.
 
 hero:
-  eyebrow: A concept · Four days · Six to ten people
+  eyebrow: A concept · A few days · Six to ten people
   headline: Work alone,
   headline_em: together.
   tagline: A retreat for focused parallel craft, shared momentum, and zero-friction camaraderie.
@@ -42,7 +42,7 @@ rhythm:
 
 principles:
   number: 03 · Logistics &amp; principles
-  heading: Four rules,
+  heading: Five rules,
   heading_em: no overhead.
 
 feedback:
